@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Examples</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Themes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Blog</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="mb-3">
+            <h4>Button Area</h4>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger btn-sm">Danger</button>
+        <button type="button" class="btn btn-warning btn-lg">Warning</button>
+        <button type="button" class="btn btn-info btn-sm">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark btn-sm disabled">Dark</button>
+
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+        </button>
+        <div class="d-grid gap-3 mt-2">
+            <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mb-3">
+            <h4>Card Area</h4>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            <div class="row g-0">
+                <div class="col-3 col-sm-3">
+                    <img src="assets/img-3x4.png" class="img-fluid w-100 img-height" alt="card-horizontal-image">
+                </div>
+                <div class="col-9 col-sm-9">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mb-3">
+            <h4>Input Form Area</h4>
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">First Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="first_name" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="last_name" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="phone" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="email" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Address</label>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="your address"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary float-end mt-3">Submit</button>
+        </form>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mb-3">
+            <h4>List Area</h4>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">Mern Stack</li>
+            <li class="list-group-item list-group-item-primary">Web Development</li>
+            <li class="list-group-item list-group-item-secondary">Bootstrap</li>
+            <li class="list-group-item list-group-item-success">Vue Js</li>
+            <li class="list-group-item list-group-item-danger">Inertiajs</li>
+            <li class="list-group-item list-group-item-warning">Wordpress</li>
+        </ul>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mb-3">
+            <h4>Progress Bar Area</h4>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mb-3">
+            <h4>Pagination Area</h4>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-3">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mb-3">
+            <h4>Table Area</h4>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Eren</td>
+                    <td>Yeager</td>
+                    <td>eren@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Justin</td>
+                    <td>Biber</td>
+                    <td>justin@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Mary</td>
+                    <td>Peterson</td>
+                    <td>mary@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mb-3">
+            <h4>Dropdown Area</h4>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Action
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Deactivate</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+</body>
+</html>
